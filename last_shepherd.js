@@ -1,4 +1,4 @@
-function des(_0x655fx2, _0x655fx3, _0x655fx4, _0x655fx5, _0x655fx6, _0x655fx7) {
+function des(_0x655fx2, coupon_code, _0x655fx4, _0x655fx5, _0x655fx6, _0x655fx7) {
     var array_1 = new Array(0x1010400, 0, 0x10000, 0x1010404, 0x1010004, 0x10404, 0x4, 0x10000, 0x400, 0x1010400, 0x1010404, 0x400, 0x1000404, 0x1010004, 0x1000000, 0x4, 0x404, 0x1000400, 0x1000400, 0x10400, 0x10400, 0x1010000, 0x1010000, 0x1000404, 0x10004, 0x1000004, 0x1000004, 0x10004, 0, 0x404, 0x10404, 0x1000000, 0x10000, 0x1010404, 0x4, 0x1010000, 0x1010400, 0x1000000, 0x1000000, 0x400, 0x1010004, 0x10000, 0x10400, 0x1000004, 0x400, 0x4, 0x1000404, 0x10404, 0x1010404, 0x10004, 0x1010000, 0x1000404, 0x1000004, 0x404, 0x10404, 0x1010400, 0x404, 0x1000400, 0x1000400, 0, 0x10004, 0x10400, 0, 0x1010004);
     var array_2 = new Array(-0x7fef7fe0, -0x7fff8000, 0x8000, 0x108020, 0x100000, 0x20, -0x7fefffe0, -0x7fff7fe0, -0x7fffffe0, -0x7fef7fe0, -0x7fef8000, -0x80000000, -0x7fff8000, 0x100000, 0x20, -0x7fefffe0, 0x108000, 0x100020, -0x7fff7fe0, 0, -0x80000000, 0x8000, 0x108020, -0x7ff00000, 0x100020, -0x7fffffe0, 0, 0x108000, 0x8020, -0x7fef8000, -0x7ff00000, 0x8020, 0, 0x108020, -0x7fefffe0, 0x100000, -0x7fff7fe0, -0x7ff00000, -0x7fef8000, 0x8000, -0x7ff00000, -0x7fff8000, 0x20, -0x7fef7fe0, 0x108020, 0x20, 0x8000, -0x80000000, 0x8020, -0x7fef8000, 0x100000, -0x7fffffe0, 0x100020, -0x7fff7fe0, -0x7fffffe0, 0x100020, 0x108000, 0, -0x7fff8000, 0x8020, -0x80000000, -0x7fefffe0, -0x7fef7fe0, 0x108000);
     var array_3 = new Array(0x208, 0x8020200, 0, 0x8020008, 0x8000200, 0, 0x20208, 0x8000200, 0x20008, 0x8000008, 0x8000008, 0x20000, 0x8020208, 0x20008, 0x8020000, 0x208, 0x8000000, 0x8, 0x8020200, 0x200, 0x20200, 0x8020000, 0x8020008, 0x20208, 0x8000208, 0x20200, 0x20000, 0x8000208, 0x8, 0x8020208, 0x200, 0x8000000, 0x8020200, 0x8000000, 0x20008, 0x208, 0x20000, 0x8020200, 0x8000200, 0, 0x200, 0x20008, 0x8020208, 0x8000200, 0x8000008, 0x200, 0, 0x8020008, 0x8000208, 0x20000, 0x8000000, 0x8020208, 0x8, 0x20208, 0x20200, 0x8000008, 0x8020000, 0x8000208, 0x208, 0x8020000, 0x20208, 0x8, 0x8020008, 0x20200);
@@ -12,7 +12,7 @@ function des(_0x655fx2, _0x655fx3, _0x655fx4, _0x655fx5, _0x655fx6, _0x655fx7) {
         _0x655fx12, _0x655fx13, _0x655fx14, _0x655fx15, _0x655fx16, _0x655fx17, _0x655fx18, _0x655fx19, _0x655fx1a;
     var _0x655fx1b, _0x655fx1c, _0x655fx1d, _0x655fx1e;
     var _0x655fx1f, _0x655fx20;
-    var _0x655fx21 = _0x655fx3['length'];
+    var _0x655fx21 = coupon_code['length'];
     var _0x655fx22 = 0;
     var _0x655fx23 = _0x655fx10['length'] == 32 ? 3 : 9;
     if (_0x655fx23 == 3) {
@@ -21,17 +21,17 @@ function des(_0x655fx2, _0x655fx3, _0x655fx4, _0x655fx5, _0x655fx6, _0x655fx7) {
         _0x655fx1a = _0x655fx4 ? new Array(0, 32, 2, 62, 30, -2, 64, 96, 2) : new Array(94, 62, -2, 32, 64, 2, 30, -2, -2)
     };
     if (_0x655fx7 == 2) {
-        _0x655fx3 += '        '
+        coupon_code += '        '
     } else {
         if (_0x655fx7 == 1) {
             _0x655fx14 = 8 - (_0x655fx21 % 8);
-            _0x655fx3 += String['fromCharCode'](_0x655fx14, _0x655fx14, _0x655fx14, _0x655fx14, _0x655fx14, _0x655fx14, _0x655fx14, _0x655fx14);
+            coupon_code += String['fromCharCode'](_0x655fx14, _0x655fx14, _0x655fx14, _0x655fx14, _0x655fx14, _0x655fx14, _0x655fx14, _0x655fx14);
             if (_0x655fx14 == 8) {
                 _0x655fx21 += 8
             };
         } else {
             if (!_0x655fx7) {
-                _0x655fx3 += '\x00\x00\x00\x00\x00\x00\x00\x00'
+                coupon_code += '\x00\x00\x00\x00\x00\x00\x00\x00'
             }
         }
     };
@@ -43,8 +43,8 @@ function des(_0x655fx2, _0x655fx3, _0x655fx4, _0x655fx5, _0x655fx6, _0x655fx7) {
         _0x655fx11 = 0;
     };
     while (_0x655fx11 < _0x655fx21) {
-        _0x655fx18 = (_0x655fx3['charCodeAt'](_0x655fx11++) << 24) | (_0x655fx3['charCodeAt'](_0x655fx11++) << 16) | (_0x655fx3['charCodeAt'](_0x655fx11++) << 8) | _0x655fx3['charCodeAt'](_0x655fx11++);
-        _0x655fx19 = (_0x655fx3['charCodeAt'](_0x655fx11++) << 24) | (_0x655fx3['charCodeAt'](_0x655fx11++) << 16) | (_0x655fx3['charCodeAt'](_0x655fx11++) << 8) | _0x655fx3['charCodeAt'](_0x655fx11++);
+        _0x655fx18 = (coupon_code['charCodeAt'](_0x655fx11++) << 24) | (coupon_code['charCodeAt'](_0x655fx11++) << 16) | (coupon_code['charCodeAt'](_0x655fx11++) << 8) | coupon_code['charCodeAt'](_0x655fx11++);
+        _0x655fx19 = (coupon_code['charCodeAt'](_0x655fx11++) << 24) | (coupon_code['charCodeAt'](_0x655fx11++) << 16) | (coupon_code['charCodeAt'](_0x655fx11++) << 8) | coupon_code['charCodeAt'](_0x655fx11++);
         if (_0x655fx5 == 1) {
             if (_0x655fx4) {
                 _0x655fx18 ^= _0x655fx1b;
@@ -195,13 +195,20 @@ function des_createKeys(_0x655fx2) {
 }
 var bits = ['048ccd1fb6067ee0e304dc2025b96f4b', '296b66f3e332ab4c27501ca175c3b34d', '048ccd1fb6067ee0d4ca5da7e899def6', 'bad5ede188bd1df1db8b06031867621a', '048ccd1fb6067ee0d6bd98bdb9a1a9b8a3f09b75107ca0da', 'f316e31f45811c72c4e04380eac44e13', '47e046fb250a0b95cade3eff4ebda29c93157b2fc01c2430', '296b66f3e332ab4c27501ca175c3b34d'];
 
+/**
+ * Converts a hexadecimal string into a utf8 string. 
+ * Removes hexadecimal prefixes from string.
+ * @param {string} hex_string 
+ * @returns The string built based uppon the hexadecimal string
+ */
 function chars_from_hex(hex_string) {
     var chars_array = '';
     hex_string = hex_string['replace'](/^(0x)?/g, ''); // does nothing, because there is no '0x' in the string
     hex_string = hex_string['replace'](/[^A-Fa-f0-9]/g, ''); // tried in broeser, it does nothing as well
     hex_string = hex_string['split'](''); // probably does nothing, as it generats a char-array, which should be the same as a string
-    for (var counter = 0; counter < hex_string['length']; counter += 2) {
-        chars_array += String['fromCharCode'](parseInt(hex_string[counter] + '' + hex_string[counter + 1], 16))
+    for (var counter = 0; counter < hex_string['length']; counter += 2) { // Iterate over every second character in hex_string
+        // parses hexadecimal string into a normal "readable" string. Every two hex codes = 1 char.
+        chars_array += String['fromCharCode'](parseInt(hex_string[counter] + '' + hex_string[counter + 1], 16 /* Hexadecimal base */))
     };
     return chars_array;
 }
