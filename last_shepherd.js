@@ -243,3 +243,57 @@ function checkCoupon(coupon_code) {
         return true
     };
 }
+
+/* -----------------------------------------------------------------------
+██╗░░░██╗███╗░░██╗██╗████████╗  ████████╗███████╗░██████╗████████╗░██████╗
+██║░░░██║████╗░██║██║╚══██╔══╝  ╚══██╔══╝██╔════╝██╔════╝╚══██╔══╝██╔════╝
+██║░░░██║██╔██╗██║██║░░░██║░░░  ░░░██║░░░█████╗░░╚█████╗░░░░██║░░░╚█████╗░
+██║░░░██║██║╚████║██║░░░██║░░░  ░░░██║░░░██╔══╝░░░╚═══██╗░░░██║░░░░╚═══██╗
+╚██████╔╝██║░╚███║██║░░░██║░░░  ░░░██║░░░███████╗██████╔╝░░░██║░░░██████╔╝
+░╚═════╝░╚═╝░░╚══╝╚═╝░░░╚═╝░░░  ░░░╚═╝░░░╚══════╝╚═════╝░░░░╚═╝░░░╚═════╝░
+----------------------------------------------------------------------- */
+
+// ARRANGE
+var valid_coupon_codes = 
+[
+    "RageMemeForFree",
+    "PleaseTakeARage"
+];
+
+var random_codes =
+[
+    "7293186948",
+    "0087656175",
+    "7724126523",
+    "0375719233",
+    "6625777020",
+    "fQcZg1C6t98QYQN",
+    "CnCNoDM8a6ULWbU",
+    "8gUiUexcq3zdZqx",
+    "wcYooclAdeAu8SN",
+    "ruKGmk7Le3mMJDT",
+    "8CYQ2ZiNeBFCn2R",
+    "rdDyrISuNzNbwqc",
+    "Xm65XZp2M5J0DER",
+    "6mvwDCYvEJNRWh6",
+    "86ardeNOisHWA15"
+]
+
+// ASSERT
+
+for (let index = 0; index < valid_coupon_codes.length; index++) {
+    const element = valid_coupon_codes[index];
+    if (checkCoupon(element) != true)
+    {
+        throw new Error('Coupon "' + element + '" did not match encrypted value. Something is broken...');
+    }
+}
+
+for (let index = 0; index < random_codes.length; index++) {
+    const element = random_codes[index];
+    if (checkCoupon(element) == true)
+    {
+        throw new Error('Random Coupon "' + element + '" did match encrypted value. Something is broken...');
+    }
+}
+
