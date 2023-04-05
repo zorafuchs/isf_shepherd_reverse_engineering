@@ -1,132 +1,154 @@
-function des(chars_string, coupon_code, some_integer, zero_or_one, second_chars_string, seems_to_be_optional) {
-    var array_1 = new Array(0x1010400, 0, 0x10000, 0x1010404, 0x1010004, 0x10404, 0x4, 0x10000, 0x400, 0x1010400, 0x1010404, 0x400, 0x1000404, 0x1010004, 0x1000000, 0x4, 0x404, 0x1000400, 0x1000400, 0x10400, 0x10400, 0x1010000, 0x1010000, 0x1000404, 0x10004, 0x1000004, 0x1000004, 0x10004, 0, 0x404, 0x10404, 0x1000000, 0x10000, 0x1010404, 0x4, 0x1010000, 0x1010400, 0x1000000, 0x1000000, 0x400, 0x1010004, 0x10000, 0x10400, 0x1000004, 0x400, 0x4, 0x1000404, 0x10404, 0x1010404, 0x10004, 0x1010000, 0x1000404, 0x1000004, 0x404, 0x10404, 0x1010400, 0x404, 0x1000400, 0x1000400, 0, 0x10004, 0x10400, 0, 0x1010004);
-    var array_2 = new Array(-0x7fef7fe0, -0x7fff8000, 0x8000, 0x108020, 0x100000, 0x20, -0x7fefffe0, -0x7fff7fe0, -0x7fffffe0, -0x7fef7fe0, -0x7fef8000, -0x80000000, -0x7fff8000, 0x100000, 0x20, -0x7fefffe0, 0x108000, 0x100020, -0x7fff7fe0, 0, -0x80000000, 0x8000, 0x108020, -0x7ff00000, 0x100020, -0x7fffffe0, 0, 0x108000, 0x8020, -0x7fef8000, -0x7ff00000, 0x8020, 0, 0x108020, -0x7fefffe0, 0x100000, -0x7fff7fe0, -0x7ff00000, -0x7fef8000, 0x8000, -0x7ff00000, -0x7fff8000, 0x20, -0x7fef7fe0, 0x108020, 0x20, 0x8000, -0x80000000, 0x8020, -0x7fef8000, 0x100000, -0x7fffffe0, 0x100020, -0x7fff7fe0, -0x7fffffe0, 0x100020, 0x108000, 0, -0x7fff8000, 0x8020, -0x80000000, -0x7fefffe0, -0x7fef7fe0, 0x108000);
-    var array_3 = new Array(0x208, 0x8020200, 0, 0x8020008, 0x8000200, 0, 0x20208, 0x8000200, 0x20008, 0x8000008, 0x8000008, 0x20000, 0x8020208, 0x20008, 0x8020000, 0x208, 0x8000000, 0x8, 0x8020200, 0x200, 0x20200, 0x8020000, 0x8020008, 0x20208, 0x8000208, 0x20200, 0x20000, 0x8000208, 0x8, 0x8020208, 0x200, 0x8000000, 0x8020200, 0x8000000, 0x20008, 0x208, 0x20000, 0x8020200, 0x8000200, 0, 0x200, 0x20008, 0x8020208, 0x8000200, 0x8000008, 0x200, 0, 0x8020008, 0x8000208, 0x20000, 0x8000000, 0x8020208, 0x8, 0x20208, 0x20200, 0x8000008, 0x8020000, 0x8000208, 0x208, 0x8020000, 0x20208, 0x8, 0x8020008, 0x20200);
-    var _0x655fxb = new Array(0x802001, 0x2081, 0x2081, 0x80, 0x802080, 0x800081, 0x800001, 0x2001, 0, 0x802000, 0x802000, 0x802081, 0x81, 0, 0x800080, 0x800001, 0x1, 0x2000, 0x800000, 0x802001, 0x80, 0x800000, 0x2001, 0x2080, 0x800081, 0x1, 0x2080, 0x800080, 0x2000, 0x802080, 0x802081, 0x81, 0x800080, 0x800001, 0x802000, 0x802081, 0x81, 0, 0, 0x802000, 0x2080, 0x800080, 0x800081, 0x1, 0x802001, 0x2081, 0x2081, 0x80, 0x802081, 0x81, 0x1, 0x2000, 0x800001, 0x2001, 0x802080, 0x800081, 0x2001, 0x2080, 0x800000, 0x802001, 0x80, 0x800000, 0x2000, 0x802080);
-    var _0x655fxc = new Array(0x100, 0x2080100, 0x2080000, 0x42000100, 0x80000, 0x100, 0x40000000, 0x2080000, 0x40080100, 0x80000, 0x2000100, 0x40080100, 0x42000100, 0x42080000, 0x80100, 0x40000000, 0x2000000, 0x40080000, 0x40080000, 0, 0x40000100, 0x42080100, 0x42080100, 0x2000100, 0x42080000, 0x40000100, 0, 0x42000000, 0x2080100, 0x2000000, 0x42000000, 0x80100, 0x80000, 0x42000100, 0x100, 0x2000000, 0x40000000, 0x2080000, 0x42000100, 0x40080100, 0x2000100, 0x40000000, 0x42080000, 0x2080100, 0x40080100, 0x100, 0x2000000, 0x42080000, 0x42080100, 0x80100, 0x42000000, 0x42080100, 0x2080000, 0, 0x40080000, 0x42000000, 0x80100, 0x2000100, 0x40000100, 0x80000, 0, 0x40080000, 0x2080100, 0x40000100);
-    var _0x655fxd = new Array(0x20000010, 0x20400000, 0x4000, 0x20404010, 0x20400000, 0x10, 0x20404010, 0x400000, 0x20004000, 0x404010, 0x400000, 0x20000010, 0x400010, 0x20004000, 0x20000000, 0x4010, 0, 0x400010, 0x20004010, 0x4000, 0x404000, 0x20004010, 0x10, 0x20400010, 0x20400010, 0, 0x404010, 0x20404000, 0x4010, 0x404000, 0x20404000, 0x20000000, 0x20004000, 0x10, 0x20400010, 0x404000, 0x20404010, 0x400000, 0x4010, 0x20000010, 0x400000, 0x20004000, 0x20000000, 0x4010, 0x20000010, 0x20404010, 0x404000, 0x20400000, 0x404010, 0x20404000, 0, 0x20400010, 0x10, 0x4000, 0x20400000, 0x404010, 0x4000, 0x400010, 0x20004010, 0, 0x20404000, 0x20000000, 0x400010, 0x20004010);
-    var _0x655fxe = new Array(0x200000, 0x4200002, 0x4000802, 0, 0x800, 0x4000802, 0x200802, 0x4200800, 0x4200802, 0x200000, 0, 0x4000002, 0x2, 0x4000000, 0x4200002, 0x802, 0x4000800, 0x200802, 0x200002, 0x4000800, 0x4000002, 0x4200000, 0x4200800, 0x200002, 0x4200000, 0x800, 0x802, 0x4200802, 0x200800, 0x2, 0x4000000, 0x200800, 0x4000000, 0x200800, 0x200000, 0x4000802, 0x4000802, 0x4200002, 0x4200002, 0x2, 0x200002, 0x4000000, 0x4000800, 0x200000, 0x4200800, 0x802, 0x200802, 0x4200800, 0x802, 0x4000002, 0x4200802, 0x4200000, 0x200800, 0, 0x2, 0x4200802, 0, 0x200802, 0x4200000, 0x800, 0x4000002, 0x4000800, 0x800, 0x200002);
-    var _0x655fxf = new Array(0x10001040, 0x1000, 0x40000, 0x10041040, 0x10000000, 0x10001040, 0x40, 0x10000000, 0x40040, 0x10040000, 0x10041040, 0x41000, 0x10041000, 0x41040, 0x1000, 0x40, 0x10040000, 0x10000040, 0x10001000, 0x1040, 0x41000, 0x40040, 0x10040040, 0x10041000, 0x1040, 0, 0, 0x10040040, 0x10000040, 0x10001000, 0x41040, 0x40000, 0x41040, 0x40000, 0x10041000, 0x1000, 0x40, 0x10040040, 0x1000, 0x41040, 0x10001000, 0x40, 0x10000040, 0x10040000, 0x10040040, 0x10000000, 0x40000, 0x10001040, 0, 0x10041040, 0x40040, 0x10000040, 0x10040000, 0x10001000, 0x10001040, 0, 0x10041040, 0x41000, 0x41000, 0x1040, 0x1040, 0x40040, 0x10000000, 0x10041000);
-    var _0x655fx10 = des_createKeys(chars_string);
-    var _0x655fx11 = 0,
-        _0x655fx12, _0x655fx13, _0x655fx14, _0x655fx15, _0x655fx16, _0x655fx17, _0x655fx18, _0x655fx19, _0x655fx1a;
-    var _0x655fx1b, _0x655fx1c, _0x655fx1d, _0x655fx1e;
-    var _0x655fx1f, _0x655fx20;
-    var _0x655fx21 = coupon_code['length'];
-    var _0x655fx22 = 0;
-    var _0x655fx23 = _0x655fx10['length'] == 32 ? 3 : 9;
-    if (_0x655fx23 == 3) {
-        _0x655fx1a = some_integer ? new Array(0, 32, 2) : new Array(30, -2, -2)
+function des(key, message, encrypt, mode, initialisation_vector, padding) {
+    var spfunction1 = new Array(0x1010400, 0, 0x10000, 0x1010404, 0x1010004, 0x10404, 0x4, 0x10000, 0x400, 0x1010400, 0x1010404, 0x400, 0x1000404, 0x1010004, 0x1000000, 0x4, 0x404, 0x1000400, 0x1000400, 0x10400, 0x10400, 0x1010000, 0x1010000, 0x1000404, 0x10004, 0x1000004, 0x1000004, 0x10004, 0, 0x404, 0x10404, 0x1000000, 0x10000, 0x1010404, 0x4, 0x1010000, 0x1010400, 0x1000000, 0x1000000, 0x400, 0x1010004, 0x10000, 0x10400, 0x1000004, 0x400, 0x4, 0x1000404, 0x10404, 0x1010404, 0x10004, 0x1010000, 0x1000404, 0x1000004, 0x404, 0x10404, 0x1010400, 0x404, 0x1000400, 0x1000400, 0, 0x10004, 0x10400, 0, 0x1010004);
+    var spfunction2 = new Array(-0x7fef7fe0, -0x7fff8000, 0x8000, 0x108020, 0x100000, 0x20, -0x7fefffe0, -0x7fff7fe0, -0x7fffffe0, -0x7fef7fe0, -0x7fef8000, -0x80000000, -0x7fff8000, 0x100000, 0x20, -0x7fefffe0, 0x108000, 0x100020, -0x7fff7fe0, 0, -0x80000000, 0x8000, 0x108020, -0x7ff00000, 0x100020, -0x7fffffe0, 0, 0x108000, 0x8020, -0x7fef8000, -0x7ff00000, 0x8020, 0, 0x108020, -0x7fefffe0, 0x100000, -0x7fff7fe0, -0x7ff00000, -0x7fef8000, 0x8000, -0x7ff00000, -0x7fff8000, 0x20, -0x7fef7fe0, 0x108020, 0x20, 0x8000, -0x80000000, 0x8020, -0x7fef8000, 0x100000, -0x7fffffe0, 0x100020, -0x7fff7fe0, -0x7fffffe0, 0x100020, 0x108000, 0, -0x7fff8000, 0x8020, -0x80000000, -0x7fefffe0, -0x7fef7fe0, 0x108000);
+    var spfunction3 = new Array(0x208, 0x8020200, 0, 0x8020008, 0x8000200, 0, 0x20208, 0x8000200, 0x20008, 0x8000008, 0x8000008, 0x20000, 0x8020208, 0x20008, 0x8020000, 0x208, 0x8000000, 0x8, 0x8020200, 0x200, 0x20200, 0x8020000, 0x8020008, 0x20208, 0x8000208, 0x20200, 0x20000, 0x8000208, 0x8, 0x8020208, 0x200, 0x8000000, 0x8020200, 0x8000000, 0x20008, 0x208, 0x20000, 0x8020200, 0x8000200, 0, 0x200, 0x20008, 0x8020208, 0x8000200, 0x8000008, 0x200, 0, 0x8020008, 0x8000208, 0x20000, 0x8000000, 0x8020208, 0x8, 0x20208, 0x20200, 0x8000008, 0x8020000, 0x8000208, 0x208, 0x8020000, 0x20208, 0x8, 0x8020008, 0x20200);
+    var spfunction4 = new Array(0x802001, 0x2081, 0x2081, 0x80, 0x802080, 0x800081, 0x800001, 0x2001, 0, 0x802000, 0x802000, 0x802081, 0x81, 0, 0x800080, 0x800001, 0x1, 0x2000, 0x800000, 0x802001, 0x80, 0x800000, 0x2001, 0x2080, 0x800081, 0x1, 0x2080, 0x800080, 0x2000, 0x802080, 0x802081, 0x81, 0x800080, 0x800001, 0x802000, 0x802081, 0x81, 0, 0, 0x802000, 0x2080, 0x800080, 0x800081, 0x1, 0x802001, 0x2081, 0x2081, 0x80, 0x802081, 0x81, 0x1, 0x2000, 0x800001, 0x2001, 0x802080, 0x800081, 0x2001, 0x2080, 0x800000, 0x802001, 0x80, 0x800000, 0x2000, 0x802080);
+    var spfunction5 = new Array(0x100, 0x2080100, 0x2080000, 0x42000100, 0x80000, 0x100, 0x40000000, 0x2080000, 0x40080100, 0x80000, 0x2000100, 0x40080100, 0x42000100, 0x42080000, 0x80100, 0x40000000, 0x2000000, 0x40080000, 0x40080000, 0, 0x40000100, 0x42080100, 0x42080100, 0x2000100, 0x42080000, 0x40000100, 0, 0x42000000, 0x2080100, 0x2000000, 0x42000000, 0x80100, 0x80000, 0x42000100, 0x100, 0x2000000, 0x40000000, 0x2080000, 0x42000100, 0x40080100, 0x2000100, 0x40000000, 0x42080000, 0x2080100, 0x40080100, 0x100, 0x2000000, 0x42080000, 0x42080100, 0x80100, 0x42000000, 0x42080100, 0x2080000, 0, 0x40080000, 0x42000000, 0x80100, 0x2000100, 0x40000100, 0x80000, 0, 0x40080000, 0x2080100, 0x40000100);
+    var spfunction6 = new Array(0x20000010, 0x20400000, 0x4000, 0x20404010, 0x20400000, 0x10, 0x20404010, 0x400000, 0x20004000, 0x404010, 0x400000, 0x20000010, 0x400010, 0x20004000, 0x20000000, 0x4010, 0, 0x400010, 0x20004010, 0x4000, 0x404000, 0x20004010, 0x10, 0x20400010, 0x20400010, 0, 0x404010, 0x20404000, 0x4010, 0x404000, 0x20404000, 0x20000000, 0x20004000, 0x10, 0x20400010, 0x404000, 0x20404010, 0x400000, 0x4010, 0x20000010, 0x400000, 0x20004000, 0x20000000, 0x4010, 0x20000010, 0x20404010, 0x404000, 0x20400000, 0x404010, 0x20404000, 0, 0x20400010, 0x10, 0x4000, 0x20400000, 0x404010, 0x4000, 0x400010, 0x20004010, 0, 0x20404000, 0x20000000, 0x400010, 0x20004010);
+    var spfunction7 = new Array(0x200000, 0x4200002, 0x4000802, 0, 0x800, 0x4000802, 0x200802, 0x4200800, 0x4200802, 0x200000, 0, 0x4000002, 0x2, 0x4000000, 0x4200002, 0x802, 0x4000800, 0x200802, 0x200002, 0x4000800, 0x4000002, 0x4200000, 0x4200800, 0x200002, 0x4200000, 0x800, 0x802, 0x4200802, 0x200800, 0x2, 0x4000000, 0x200800, 0x4000000, 0x200800, 0x200000, 0x4000802, 0x4000802, 0x4200002, 0x4200002, 0x2, 0x200002, 0x4000000, 0x4000800, 0x200000, 0x4200800, 0x802, 0x200802, 0x4200800, 0x802, 0x4000002, 0x4200802, 0x4200000, 0x200800, 0, 0x2, 0x4200802, 0, 0x200802, 0x4200000, 0x800, 0x4000002, 0x4000800, 0x800, 0x200002);
+    var spfunction8 = new Array(0x10001040, 0x1000, 0x40000, 0x10041040, 0x10000000, 0x10001040, 0x40, 0x10000000, 0x40040, 0x10040000, 0x10041040, 0x41000, 0x10041000, 0x41040, 0x1000, 0x40, 0x10040000, 0x10000040, 0x10001000, 0x1040, 0x41000, 0x40040, 0x10040040, 0x10041000, 0x1040, 0, 0, 0x10040040, 0x10000040, 0x10001000, 0x41040, 0x40000, 0x41040, 0x40000, 0x10041000, 0x1000, 0x40, 0x10040040, 0x1000, 0x41040, 0x10001000, 0x40, 0x10000040, 0x10040000, 0x10040040, 0x10000000, 0x40000, 0x10001040, 0, 0x10041040, 0x40040, 0x10000040, 0x10040000, 0x10001000, 0x10001040, 0, 0x10041040, 0x41000, 0x41000, 0x1040, 0x1040, 0x40040, 0x10000000, 0x10041000);
+    
+    //create the 16 or 48 subkeys we will need
+    var created_keys = des_createKeys(key);
+    var m = 0,
+        i, j, temp, temp2, right1, right2, left, right, looping;
+    var cbcleft, cbcleft2, cbcright, cbcright2;
+    var endloop, loopinc;
+    var message_length = message['length'];
+    var chunk = 0;
+    //set up the loops for single and triple des
+    var iterations = created_keys['length'] == 32 ? 3 : 9;  //single or triple des
+    if (iterations == 3) {
+        looping = encrypt ? new Array(0, 32, 2) : new Array(30, -2, -2)
     } else {
-        _0x655fx1a = some_integer ? new Array(0, 32, 2, 62, 30, -2, 64, 96, 2) : new Array(94, 62, -2, 32, 64, 2, 30, -2, -2)
+        looping = encrypt ? new Array(0, 32, 2, 62, 30, -2, 64, 96, 2) : new Array(94, 62, -2, 32, 64, 2, 30, -2, -2)
     };
-    if (seems_to_be_optional == 2) {
-        coupon_code += '        '
+
+    //pad the message depending on the padding parameter
+    if (padding == 2) {
+        message += '        ' //pad the message with spaces
     } else {
-        if (seems_to_be_optional == 1) {
-            _0x655fx14 = 8 - (_0x655fx21 % 8);
-            coupon_code += String['fromCharCode'](_0x655fx14, _0x655fx14, _0x655fx14, _0x655fx14, _0x655fx14, _0x655fx14, _0x655fx14, _0x655fx14);
-            if (_0x655fx14 == 8) {
-                _0x655fx21 += 8
-            };
+        if (padding == 1) {
+            temp = 8 - (message_length % 8);
+            message += String['fromCharCode'](temp, temp, temp, temp, temp, temp, temp, temp);
+            if (temp == 8) {
+                message_length += 8
+            }; //PKCS7 padding
         } else {
-            if (!seems_to_be_optional) {
-                coupon_code += '\x00\x00\x00\x00\x00\x00\x00\x00'
+            if (!padding) {
+                message += '\x00\x00\x00\x00\x00\x00\x00\x00' //pad the message out with null bytes
             }
         }
     };
     result = '';
     tempresult = '';
-    if (zero_or_one == 1) {
-        _0x655fx1b = (second_chars_string['charCodeAt'](_0x655fx11++) << 24) | (second_chars_string['charCodeAt'](_0x655fx11++) << 16) | (second_chars_string['charCodeAt'](_0x655fx11++) << 8) | second_chars_string['charCodeAt'](_0x655fx11++);
-        _0x655fx1d = (second_chars_string['charCodeAt'](_0x655fx11++) << 24) | (second_chars_string['charCodeAt'](_0x655fx11++) << 16) | (second_chars_string['charCodeAt'](_0x655fx11++) << 8) | second_chars_string['charCodeAt'](_0x655fx11++);
-        _0x655fx11 = 0;
+    if (mode == 1) { // CBC Mode
+        cbcleft = (initialisation_vector['charCodeAt'](m++) << 24) | (initialisation_vector['charCodeAt'](m++) << 16) | (initialisation_vector['charCodeAt'](m++) << 8) | initialisation_vector['charCodeAt'](m++);
+        cbcright = (initialisation_vector['charCodeAt'](m++) << 24) | (initialisation_vector['charCodeAt'](m++) << 16) | (initialisation_vector['charCodeAt'](m++) << 8) | initialisation_vector['charCodeAt'](m++);
+        m = 0;
     };
-    while (_0x655fx11 < _0x655fx21) {
-        _0x655fx18 = (coupon_code['charCodeAt'](_0x655fx11++) << 24) | (coupon_code['charCodeAt'](_0x655fx11++) << 16) | (coupon_code['charCodeAt'](_0x655fx11++) << 8) | coupon_code['charCodeAt'](_0x655fx11++);
-        _0x655fx19 = (coupon_code['charCodeAt'](_0x655fx11++) << 24) | (coupon_code['charCodeAt'](_0x655fx11++) << 16) | (coupon_code['charCodeAt'](_0x655fx11++) << 8) | coupon_code['charCodeAt'](_0x655fx11++);
-        if (zero_or_one == 1) {
-            if (some_integer) {
-                _0x655fx18 ^= _0x655fx1b;
-                _0x655fx19 ^= _0x655fx1d;
+
+    //loop through each 64 bit chunk of the message
+    while (m < message_length) {
+        left = (message['charCodeAt'](m++) << 24) | (message['charCodeAt'](m++) << 16) | (message['charCodeAt'](m++) << 8) | message['charCodeAt'](m++);
+        right = (message['charCodeAt'](m++) << 24) | (message['charCodeAt'](m++) << 16) | (message['charCodeAt'](m++) << 8) | message['charCodeAt'](m++);
+        
+        //for Cipher Block Chaining mode, xor the message with the previous result
+        if (mode == 1) {
+            if (encrypt) {
+                left ^= cbcleft;
+                right ^= cbcright;
             } else {
-                _0x655fx1c = _0x655fx1b;
-                _0x655fx1e = _0x655fx1d;
-                _0x655fx1b = _0x655fx18;
-                _0x655fx1d = _0x655fx19;
+                cbcleft2 = cbcleft;
+                cbcright2 = cbcright;
+                cbcleft = left;
+                cbcright = right;
             }
         };
-        _0x655fx14 = ((_0x655fx18 >>> 4) ^ _0x655fx19) & 0x0f0f0f0f;
-        _0x655fx19 ^= _0x655fx14;
-        _0x655fx18 ^= (_0x655fx14 << 4);
-        _0x655fx14 = ((_0x655fx18 >>> 16) ^ _0x655fx19) & 0x0000ffff;
-        _0x655fx19 ^= _0x655fx14;
-        _0x655fx18 ^= (_0x655fx14 << 16);
-        _0x655fx14 = ((_0x655fx19 >>> 2) ^ _0x655fx18) & 0x33333333;
-        _0x655fx18 ^= _0x655fx14;
-        _0x655fx19 ^= (_0x655fx14 << 2);
-        _0x655fx14 = ((_0x655fx19 >>> 8) ^ _0x655fx18) & 0x00ff00ff;
-        _0x655fx18 ^= _0x655fx14;
-        _0x655fx19 ^= (_0x655fx14 << 8);
-        _0x655fx14 = ((_0x655fx18 >>> 1) ^ _0x655fx19) & 0x55555555;
-        _0x655fx19 ^= _0x655fx14;
-        _0x655fx18 ^= (_0x655fx14 << 1);
-        _0x655fx18 = ((_0x655fx18 << 1) | (_0x655fx18 >>> 31));
-        _0x655fx19 = ((_0x655fx19 << 1) | (_0x655fx19 >>> 31));
-        for (_0x655fx13 = 0; _0x655fx13 < _0x655fx23; _0x655fx13 += 3) {
-            _0x655fx1f = _0x655fx1a[_0x655fx13 + 1];
-            _0x655fx20 = _0x655fx1a[_0x655fx13 + 2];
-            for (_0x655fx12 = _0x655fx1a[_0x655fx13]; _0x655fx12 != _0x655fx1f; _0x655fx12 += _0x655fx20) {
-                _0x655fx16 = _0x655fx19 ^ _0x655fx10[_0x655fx12];
-                _0x655fx17 = ((_0x655fx19 >>> 4) | (_0x655fx19 << 28)) ^ _0x655fx10[_0x655fx12 + 1];
-                _0x655fx14 = _0x655fx18;
-                _0x655fx18 = _0x655fx19;
-                _0x655fx19 = _0x655fx14 ^ (array_2[(_0x655fx16 >>> 24) & 0x3f] | _0x655fxb[(_0x655fx16 >>> 16) & 0x3f] | _0x655fxd[(_0x655fx16 >>> 8) & 0x3f] | _0x655fxf[_0x655fx16 & 0x3f] | array_1[(_0x655fx17 >>> 24) & 0x3f] | array_3[(_0x655fx17 >>> 16) & 0x3f] | _0x655fxc[(_0x655fx17 >>> 8) & 0x3f] | _0x655fxe[_0x655fx17 & 0x3f]);
+
+        //first each 64 but chunk of the message must be permuted according to IP
+        temp = ((left >>> 4) ^ right) & 0x0f0f0f0f;
+        right ^= temp;
+        left ^= (temp << 4);
+        temp = ((left >>> 16) ^ right) & 0x0000ffff;
+        right ^= temp;
+        left ^= (temp << 16);
+        temp = ((right >>> 2) ^ left) & 0x33333333;
+        left ^= temp;
+        right ^= (temp << 2);
+        temp = ((right >>> 8) ^ left) & 0x00ff00ff;
+        left ^= temp;
+        right ^= (temp << 8);
+        temp = ((left >>> 1) ^ right) & 0x55555555;
+        right ^= temp;
+        left ^= (temp << 1);
+        left = ((left << 1) | (left >>> 31));
+        right = ((right << 1) | (right >>> 31));
+
+        //do this either 1 or 3 times for each chunk of the message
+        for (j = 0; j < iterations; j += 3) {
+            endloop = looping[j + 1];
+            loopinc = looping[j + 2];
+
+            //now go through and perform the encryption or decryption  
+            for (i = looping[j]; i != endloop; i += loopinc) {
+                right1 = right ^ created_keys[i];
+                right2 = ((right >>> 4) | (right << 28)) ^ created_keys[i + 1];
+                temp = left;
+                left = right;
+                right = temp ^ (spfunction2[(right1 >>> 24) & 0x3f] | spfunction4[(right1 >>> 16) & 0x3f] | spfunction6[(right1 >>> 8) & 0x3f] | spfunction8[right1 & 0x3f] | spfunction1[(right2 >>> 24) & 0x3f] | spfunction3[(right2 >>> 16) & 0x3f] | spfunction5[(right2 >>> 8) & 0x3f] | spfunction7[right2 & 0x3f]);
             };
-            _0x655fx14 = _0x655fx18;
-            _0x655fx18 = _0x655fx19;
-            _0x655fx19 = _0x655fx14;
+            temp = left;
+            left = right;
+            right = temp;
         };
-        _0x655fx18 = ((_0x655fx18 >>> 1) | (_0x655fx18 << 31));
-        _0x655fx19 = ((_0x655fx19 >>> 1) | (_0x655fx19 << 31));
-        _0x655fx14 = ((_0x655fx18 >>> 1) ^ _0x655fx19) & 0x55555555;
-        _0x655fx19 ^= _0x655fx14;
-        _0x655fx18 ^= (_0x655fx14 << 1);
-        _0x655fx14 = ((_0x655fx19 >>> 8) ^ _0x655fx18) & 0x00ff00ff;
-        _0x655fx18 ^= _0x655fx14;
-        _0x655fx19 ^= (_0x655fx14 << 8);
-        _0x655fx14 = ((_0x655fx19 >>> 2) ^ _0x655fx18) & 0x33333333;
-        _0x655fx18 ^= _0x655fx14;
-        _0x655fx19 ^= (_0x655fx14 << 2);
-        _0x655fx14 = ((_0x655fx18 >>> 16) ^ _0x655fx19) & 0x0000ffff;
-        _0x655fx19 ^= _0x655fx14;
-        _0x655fx18 ^= (_0x655fx14 << 16);
-        _0x655fx14 = ((_0x655fx18 >>> 4) ^ _0x655fx19) & 0x0f0f0f0f;
-        _0x655fx19 ^= _0x655fx14;
-        _0x655fx18 ^= (_0x655fx14 << 4);
-        if (zero_or_one == 1) {
-            if (some_integer) {
-                _0x655fx1b = _0x655fx18;
-                _0x655fx1d = _0x655fx19;
+
+        //now perform IP-1, which is IP in the opposite direction
+        left = ((left >>> 1) | (left << 31));
+        right = ((right >>> 1) | (right << 31));
+        temp = ((left >>> 1) ^ right) & 0x55555555;
+        right ^= temp;
+        left ^= (temp << 1);
+        temp = ((right >>> 8) ^ left) & 0x00ff00ff;
+        left ^= temp;
+        right ^= (temp << 8);
+        temp = ((right >>> 2) ^ left) & 0x33333333;
+        left ^= temp;
+        right ^= (temp << 2);
+        temp = ((left >>> 16) ^ right) & 0x0000ffff;
+        right ^= temp;
+        left ^= (temp << 16);
+        temp = ((left >>> 4) ^ right) & 0x0f0f0f0f;
+        right ^= temp;
+        left ^= (temp << 4);
+
+        //for Cipher Block Chaining mode, xor the message with the previous result
+        if (mode == 1) {
+            if (encrypt) {
+                cbcleft = left;
+                cbcright = right;
             } else {
-                _0x655fx18 ^= _0x655fx1c;
-                _0x655fx19 ^= _0x655fx1e;
+                left ^= cbcleft2;
+                right ^= cbcright2;
             }
         };
-        tempresult += String['fromCharCode']((_0x655fx18 >>> 24), ((_0x655fx18 >>> 16) & 0xff), ((_0x655fx18 >>> 8) & 0xff), (_0x655fx18 & 0xff), (_0x655fx19 >>> 24), ((_0x655fx19 >>> 16) & 0xff), ((_0x655fx19 >>> 8) & 0xff), (_0x655fx19 & 0xff));
-        _0x655fx22 += 8;
-        if (_0x655fx22 == 512) {
+        tempresult += String['fromCharCode']((left >>> 24), ((left >>> 16) & 0xff), ((left >>> 8) & 0xff), (left & 0xff), (right >>> 24), ((right >>> 16) & 0xff), ((right >>> 8) & 0xff), (right & 0xff));
+        chunk += 8;
+        if (chunk == 512) {
             result += tempresult;
             tempresult = '';
-            _0x655fx22 = 0;
-        };
+            chunk = 0;
+        }; // for every 8 characters, or 64 bits in the message
     };
     result += tempresult;
     result = result['replace'](/\0*$/g, '');
     return result;
 }
 
-function des_createKeys(_0x655fx2) {
+//des_createKeys
+//this takes as input a 64 bit key (even though only 56 bits are used)
+//as an array of 2 integers, and returns 16 48 bit keys
+function des_createKeys(key) {
     pc2bytes0 = new Array(0, 0x4, 0x20000000, 0x20000004, 0x10000, 0x10004, 0x20010000, 0x20010004, 0x200, 0x204, 0x20000200, 0x20000204, 0x10200, 0x10204, 0x20010200, 0x20010204);
     pc2bytes1 = new Array(0, 0x1, 0x100000, 0x100001, 0x4000000, 0x4000001, 0x4100000, 0x4100001, 0x100, 0x101, 0x100100, 0x100101, 0x4000100, 0x4000101, 0x4100100, 0x4100101);
     pc2bytes2 = new Array(0, 0x8, 0x800, 0x808, 0x1000000, 0x1000008, 0x1000800, 0x1000808, 0, 0x8, 0x800, 0x808, 0x1000000, 0x1000008, 0x1000800, 0x1000808);
@@ -141,41 +163,51 @@ function des_createKeys(_0x655fx2) {
     pc2bytes11 = new Array(0, 0x1000000, 0x200, 0x1000200, 0x200000, 0x1200000, 0x200200, 0x1200200, 0x4000000, 0x5000000, 0x4000200, 0x5000200, 0x4200000, 0x5200000, 0x4200200, 0x5200200);
     pc2bytes12 = new Array(0, 0x1000, 0x8000000, 0x8001000, 0x80000, 0x81000, 0x8080000, 0x8081000, 0x10, 0x1010, 0x8000010, 0x8001010, 0x80010, 0x81010, 0x8080010, 0x8081010);
     pc2bytes13 = new Array(0, 0x4, 0x100, 0x104, 0, 0x4, 0x100, 0x104, 0x1, 0x5, 0x101, 0x105, 0x1, 0x5, 0x101, 0x105);
-    var _0x655fx23 = _0x655fx2['length'] > 8 ? 3 : 1;
-    var _0x655fx10 = new Array(32 * _0x655fx23);
-    var _0x655fx25 = new Array(0, 0, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0);
-    var _0x655fx26, _0x655fx27, _0x655fx11 = 0,
-        _0x655fx28 = 0,
-        _0x655fx14;
-    for (var _0x655fx13 = 0; _0x655fx13 < _0x655fx23; _0x655fx13++) {
-        left = (_0x655fx2['charCodeAt'](_0x655fx11++) << 24) | (_0x655fx2['charCodeAt'](_0x655fx11++) << 16) | (_0x655fx2['charCodeAt'](_0x655fx11++) << 8) | _0x655fx2['charCodeAt'](_0x655fx11++);
-        right = (_0x655fx2['charCodeAt'](_0x655fx11++) << 24) | (_0x655fx2['charCodeAt'](_0x655fx11++) << 16) | (_0x655fx2['charCodeAt'](_0x655fx11++) << 8) | _0x655fx2['charCodeAt'](_0x655fx11++);
-        _0x655fx14 = ((left >>> 4) ^ right) & 0x0f0f0f0f;
-        right ^= _0x655fx14;
-        left ^= (_0x655fx14 << 4);
-        _0x655fx14 = ((right >>> -16) ^ left) & 0x0000ffff;
-        left ^= _0x655fx14;
-        right ^= (_0x655fx14 << -16);
-        _0x655fx14 = ((left >>> 2) ^ right) & 0x33333333;
-        right ^= _0x655fx14;
-        left ^= (_0x655fx14 << 2);
-        _0x655fx14 = ((right >>> -16) ^ left) & 0x0000ffff;
-        left ^= _0x655fx14;
-        right ^= (_0x655fx14 << -16);
-        _0x655fx14 = ((left >>> 1) ^ right) & 0x55555555;
-        right ^= _0x655fx14;
-        left ^= (_0x655fx14 << 1);
-        _0x655fx14 = ((right >>> 8) ^ left) & 0x00ff00ff;
-        left ^= _0x655fx14;
-        right ^= (_0x655fx14 << 8);
-        _0x655fx14 = ((left >>> 1) ^ right) & 0x55555555;
-        right ^= _0x655fx14;
-        left ^= (_0x655fx14 << 1);
-        _0x655fx14 = (left << 8) | ((right >>> 20) & 0x000000f0);
+    
+     //how many iterations (1 for des, 3 for triple des)
+    var iterations = key['length'] > 8 ? 3 : 1;
+    //stores the return keys
+    var keys = new Array(32 * iterations);
+    //now define the left shifts which need to be done
+    var shifts = new Array(0, 0, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0);
+    var lefttemp, righttemp, m = 0,
+        n = 0,
+        temp;
+    for (var j = 0; j < iterations; j++) { //either 1 or 3 iterations
+        
+        left = (key['charCodeAt'](m++) << 24) | (key['charCodeAt'](m++) << 16) | (key['charCodeAt'](m++) << 8) | key['charCodeAt'](m++);
+        right = (key['charCodeAt'](m++) << 24) | (key['charCodeAt'](m++) << 16) | (key['charCodeAt'](m++) << 8) | key['charCodeAt'](m++);
+        temp = ((left >>> 4) ^ right) & 0x0f0f0f0f;
+        right ^= temp;
+        left ^= (temp << 4);
+        temp = ((right >>> -16) ^ left) & 0x0000ffff;
+        left ^= temp;
+        right ^= (temp << -16);
+        temp = ((left >>> 2) ^ right) & 0x33333333;
+        right ^= temp;
+        left ^= (temp << 2);
+        temp = ((right >>> -16) ^ left) & 0x0000ffff;
+        left ^= temp;
+        right ^= (temp << -16);
+        temp = ((left >>> 1) ^ right) & 0x55555555;
+        right ^= temp;
+        left ^= (temp << 1);
+        temp = ((right >>> 8) ^ left) & 0x00ff00ff;
+        left ^= temp;
+        right ^= (temp << 8);
+        temp = ((left >>> 1) ^ right) & 0x55555555;
+        right ^= temp;
+        left ^= (temp << 1);
+
+        //the right side needs to be shifted and to get the last four bits of the left side
+        temp = (left << 8) | ((right >>> 20) & 0x000000f0);
+        //left needs to be put upside down
         left = (right << 24) | ((right << 8) & 0xff0000) | ((right >>> 8) & 0xff00) | ((right >>> 24) & 0xf0);
-        right = _0x655fx14;
-        for (i = 0; i < _0x655fx25['length']; i++) {
-            if (_0x655fx25[i]) {
+        right = temp;
+        //now go through and perform these shifts on the left and right keys
+        for (i = 0; i < shifts['length']; i++) {
+            //shift the keys either one or two bits to the left
+            if (shifts[i]) {
                 left = (left << 2) | (left >>> 26);
                 right = (right << 2) | (right >>> 26);
             } else {
@@ -184,14 +216,18 @@ function des_createKeys(_0x655fx2) {
             };
             left &= -0xf;
             right &= -0xf;
-            _0x655fx26 = pc2bytes0[left >>> 28] | pc2bytes1[(left >>> 24) & 0xf] | pc2bytes2[(left >>> 20) & 0xf] | pc2bytes3[(left >>> 16) & 0xf] | pc2bytes4[(left >>> 12) & 0xf] | pc2bytes5[(left >>> 8) & 0xf] | pc2bytes6[(left >>> 4) & 0xf];
-            _0x655fx27 = pc2bytes7[right >>> 28] | pc2bytes8[(right >>> 24) & 0xf] | pc2bytes9[(right >>> 20) & 0xf] | pc2bytes10[(right >>> 16) & 0xf] | pc2bytes11[(right >>> 12) & 0xf] | pc2bytes12[(right >>> 8) & 0xf] | pc2bytes13[(right >>> 4) & 0xf];
-            _0x655fx14 = ((_0x655fx27 >>> 16) ^ _0x655fx26) & 0x0000ffff;
-            _0x655fx10[_0x655fx28++] = _0x655fx26 ^ _0x655fx14;
-            _0x655fx10[_0x655fx28++] = _0x655fx27 ^ (_0x655fx14 << 16);
+            //now apply PC-2, in such a way that E is easier when encrypting or decrypting
+            //this conversion will look like PC-2 except only the last 6 bits of each byte are used
+            //rather than 48 consecutive bits and the order of lines will be according to 
+            //how the S selection functions will be applied: S2, S4, S6, S8, S1, S3, S5, S7
+            lefttemp = pc2bytes0[left >>> 28] | pc2bytes1[(left >>> 24) & 0xf] | pc2bytes2[(left >>> 20) & 0xf] | pc2bytes3[(left >>> 16) & 0xf] | pc2bytes4[(left >>> 12) & 0xf] | pc2bytes5[(left >>> 8) & 0xf] | pc2bytes6[(left >>> 4) & 0xf];
+            righttemp = pc2bytes7[right >>> 28] | pc2bytes8[(right >>> 24) & 0xf] | pc2bytes9[(right >>> 20) & 0xf] | pc2bytes10[(right >>> 16) & 0xf] | pc2bytes11[(right >>> 12) & 0xf] | pc2bytes12[(right >>> 8) & 0xf] | pc2bytes13[(right >>> 4) & 0xf];
+            temp = ((righttemp >>> 16) ^ lefttemp) & 0x0000ffff;
+            keys[n++] = lefttemp ^ temp;
+            keys[n++] = righttemp ^ (temp << 16);
         };
     };
-    return _0x655fx10;
+    return keys;
 }
 var bits = ['048ccd1fb6067ee0e304dc2025b96f4b', '296b66f3e332ab4c27501ca175c3b34d', '048ccd1fb6067ee0d4ca5da7e899def6', 'bad5ede188bd1df1db8b06031867621a', '048ccd1fb6067ee0d6bd98bdb9a1a9b8a3f09b75107ca0da', 'f316e31f45811c72c4e04380eac44e13', '47e046fb250a0b95cade3eff4ebda29c93157b2fc01c2430', '296b66f3e332ab4c27501ca175c3b34d'];
 
