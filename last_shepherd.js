@@ -343,3 +343,11 @@ if (chars_from_hex('0ba950d08830c8079bded71b852934453db8f4ffff1f5842') == "©P�
 } else {
     console.log("sorry you kinda messed up, please dont commit o.o")
 }
+
+// hex_from_chars
+
+if (hex_from_chars("©PÐ0ÈÞ×)4E=¸ôÿÿXB") == "0ba950d08830c8079bded71b852934453db8f4ffff1f5842") {
+    console.log('yeyy, hex_from_chars still works as expected!')
+} else {
+    console.log("sorry you kinda messed up, please dont commit o.o")
+}
