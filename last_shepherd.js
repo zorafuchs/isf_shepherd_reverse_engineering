@@ -197,9 +197,9 @@ var bits = ['048ccd1fb6067ee0e304dc2025b96f4b', '296b66f3e332ab4c27501ca175c3b34
 
 function chars_from_hex(hex_string) {
     var chars_array = '';
-    hex_string = hex_string['replace'](/^(0x)?/g, '');
-    hex_string = hex_string['replace'](/[^A-Fa-f0-9]/g, '');
-    hex_string = hex_string['split']('');
+    hex_string = hex_string['replace'](/^(0x)?/g, ''); // does nothing, because there is no '0x' in the string
+    hex_string = hex_string['replace'](/[^A-Fa-f0-9]/g, ''); // tried in broeser, it does nothing as well
+    hex_string = hex_string['split'](''); // probably does nothing, as it generats a char-array, which should be the same as a string
     for (var counter = 0; counter < hex_string['length']; counter += 2) {
         chars_array += String['fromCharCode'](parseInt(hex_string[counter] + '' + hex_string[counter + 1], 16))
     };
