@@ -333,3 +333,13 @@ for (let index = 0; index < random_codes.length; index++) {
     }
 }
 
+// Test functions
+//================
+
+// chars_from_hex
+
+if (chars_from_hex('0ba950d08830c8079bded71b852934453db8f4ffff1f5842') == "©PÐ0ÈÞ×)4E=¸ôÿÿXB") {
+    console.log('yeyy, chars_from_hex still works as expected!')
+} else {
+    console.log("sorry you kinda messed up, please dont commit o.o")
+}
