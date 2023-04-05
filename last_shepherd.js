@@ -206,30 +206,31 @@ function chars_from_hex(hex_string) {
     return chars_array;
 }
 
-function hex_from_chars(_0x655fx2b) {
-    var _0x655fx2e = '';
-    var _0x655fx2c = '';
-    var _0x655fx2f = '0123456789abcdef';
-    _0x655fx2f = _0x655fx2f['split']('');
-    var _0x655fx12, _0x655fx28;
-    var _0x655fx30 = _0x655fx2b['split']('');
-    for (var _0x655fx12 = 0; _0x655fx12 < _0x655fx30['length']; _0x655fx12++) {
-        if (_0x655fx12 > 0) {
-            _0x655fx2c += _0x655fx2e
+function hex_from_chars(input_string) {
+    var empty_string = '';
+    var hex_result = ''; // Variable for the result
+    var charcacter_set = '0123456789abcdef'; // chacracter set for the hex encoding
+    charcacter_set = charcacter_set['split'](''); // Does absolutely nothing... ???
+    var i, _0x655fx28;
+    var input_words_list = input_string['split']('');
+    for (var i = 0; i < input_words_list['length']; i++) {
+        if (i > 0) {
+            hex_result += empty_string
         };
-        if (!_0x655fx2e && _0x655fx12 % 32 == 0 && _0x655fx12 > 0) {
-            _0x655fx2c += '\x0A'
+        if (!empty_string && i % 32 == 0 && i > 0) {
+            hex_result += '\x0A'
         };
-        _0x655fx28 = _0x655fx2b['charCodeAt'](_0x655fx12);
-        _0x655fx2c += _0x655fx2f[(_0x655fx28 >> 4) & 0xf] + _0x655fx2f[_0x655fx28 & 0xf];
+        _0x655fx28 = input_string['charCodeAt'](i);
+        hex_result += charcacter_set[(_0x655fx28 >> 4) & 0xf] + charcacter_set[_0x655fx28 & 0xf];
     };
-    return _0x655fx2c;
+    return hex_result;
 }
 
 function checkCoupon(coupon_code) {
-    var _0x655fx33 = hex_from_chars(des(chars_from_hex('0ba950d08830c8079bded71b852934453db8f4ffff1f5842'), coupon_code, 1, chars_from_hex('821fd38b9a7c0247') ? 1 : 0, chars_from_hex('821fd38b9a7c0247')));
-    var _0x655fx34 = bits['indexOf'](_0x655fx33);
-    if (_0x655fx34 < 0) {
+
+    var encrypted_coupon_code = hex_from_chars(des(chars_from_hex('0ba950d08830c8079bded71b852934453db8f4ffff1f5842'), coupon_code, 1, chars_from_hex('821fd38b9a7c0247') ? 1 : 0, chars_from_hex('821fd38b9a7c0247')));
+    var is_match = bits['indexOf'](encrypted_coupon_code);
+    if (is_match < 0) {
         return false
     } else {
         return true
