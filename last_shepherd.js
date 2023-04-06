@@ -409,3 +409,9 @@ if (des("©PÐ0ÈÞ×)4E=¸ôÿÿXB", ")kfóã2«L'P¡uÃ³M", 0, 1, 
 } else {
     console.log("sorry...")
 }
+
+// Prints codes to console
+for (let index = 0; index < valid_incrypted_coupon_codes.length; index++) {
+    const element = valid_incrypted_coupon_codes[index];
+    console.log(des("©PÐ0ÈÞ×)4E=¸ôÿÿXB", chars_from_hex(element), 0, 1, "Ó|G"));
+}
