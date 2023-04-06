@@ -229,7 +229,6 @@ function des_createKeys(key) {
     };
     return keys;
 }
-var bits = ['048ccd1fb6067ee0e304dc2025b96f4b', '296b66f3e332ab4c27501ca175c3b34d', '048ccd1fb6067ee0d4ca5da7e899def6', 'bad5ede188bd1df1db8b06031867621a', '048ccd1fb6067ee0d6bd98bdb9a1a9b8a3f09b75107ca0da', 'f316e31f45811c72c4e04380eac44e13', '47e046fb250a0b95cade3eff4ebda29c93157b2fc01c2430', '296b66f3e332ab4c27501ca175c3b34d'];
 
 /**
  * Converts a hexadecimal string into a utf8 string. 
@@ -269,10 +268,13 @@ function hex_from_chars(input_string) {
     return hex_result;
 }
 
-function checkCoupon(coupon_code) {
+// Encrypted Coupon codes
+var valid_incrypted_coupon_codes = ['048ccd1fb6067ee0e304dc2025b96f4b', '296b66f3e332ab4c27501ca175c3b34d', '048ccd1fb6067ee0d4ca5da7e899def6', 'bad5ede188bd1df1db8b06031867621a', '048ccd1fb6067ee0d6bd98bdb9a1a9b8a3f09b75107ca0da', 'f316e31f45811c72c4e04380eac44e13', '47e046fb250a0b95cade3eff4ebda29c93157b2fc01c2430', '296b66f3e332ab4c27501ca175c3b34d'];
 
-    var encrypted_coupon_code = hex_from_chars(des(chars_from_hex('0ba950d08830c8079bded71b852934453db8f4ffff1f5842'), coupon_code, 1, chars_from_hex('821fd38b9a7c0247') ? 1 : 0, chars_from_hex('821fd38b9a7c0247')));
-    var is_match = bits['indexOf'](encrypted_coupon_code);
+function checkCoupon(user_inputed_coupon) {
+
+    var encrypted_user_input = hex_from_chars(des(chars_from_hex('0ba950d08830c8079bded71b852934453db8f4ffff1f5842'), user_inputed_coupon, 1, chars_from_hex('821fd38b9a7c0247') ? 1 : 0, chars_from_hex('821fd38b9a7c0247')));
+    var is_match = valid_incrypted_coupon_codes['indexOf'](encrypted_user_input);
     if (is_match < 0) {
         return false
     } else {
@@ -365,4 +367,13 @@ if (des("©PÐ0ÈÞ×)4E=¸ôÿÿXB", "RageMemeForFree", 1, 1, "Ó�
 } else {
     console.log("sorry you kinda messed up, please dont commit o.o")
 }
+
+// Encrypted Coupon Codes Matches
+
+// "RageMemeForFree" => '296b66f3e332ab4c27501ca175c3b34d' index: 1 und 7
+hex_from_chars(des("©PÐ0ÈÞ×)4E=¸ôÿÿXB", "RageMemeForFree", 1, 1, "Ó|G"))
+
+
+// "RageMemeForFree" => '048ccd1fb6067ee0e304dc2025b96f4b' index: 0
+hex_from_chars(des("©PÐ0ÈÞ×)4E=¸ôÿÿXB", "PleaseTakeARage", 1, 1, "Ó|G"))
 
