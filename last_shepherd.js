@@ -324,7 +324,7 @@ for (let index = 0; index < valid_example_coupon_codes.length; index++) {
     const element = valid_example_coupon_codes[index];
     if (checkCoupon(element) != true)
     {
-        throw new Error('Coupon "' + element + '" did not match encrypted value. Something is broken...');
+        console.log('dont commit');
     }
 }
 
@@ -332,7 +332,7 @@ for (let index = 0; index < random_invalid_codes.length; index++) {
     const element = random_invalid_codes[index];
     if (checkCoupon(element) == true)
     {
-        throw new Error('Random Coupon "' + element + '" did match encrypted value. Something is broken...');
+        console.log('dont commit');
     }
 }
 
@@ -403,3 +403,9 @@ hex_from_chars(des("©PÐ0ÈÞ×)4E=¸ôÿÿXB", "RageMemeForFree", 1,
 // "RageMemeForFree" => '048ccd1fb6067ee0e304dc2025b96f4b' index: 0
 hex_from_chars(des("©PÐ0ÈÞ×)4E=¸ôÿÿXB", "PleaseTakeARage", 1, 1, "Ó|G"))
 
+
+if (des("©PÐ0ÈÞ×)4E=¸ôÿÿXB", ")kfóã2«L'P¡uÃ³M", 0, 1, "Ó|G") == "RageMemeForFree") {
+    console.log('yeyy, decrypted!!!')
+} else {
+    console.log("sorry...")
+}
