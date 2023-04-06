@@ -292,13 +292,13 @@ function checkCoupon(user_inputed_coupon) {
 ----------------------------------------------------------------------- */
 
 // ARRANGE
-var valid_coupon_codes = 
+var valid_example_coupon_codes = 
 [
     "RageMemeForFree",
     "PleaseTakeARage"
 ];
 
-var random_codes =
+var random_invalid_codes =
 [
     "7293186948",
     "0087656175",
@@ -319,16 +319,16 @@ var random_codes =
 
 // ASSERT
 
-for (let index = 0; index < valid_coupon_codes.length; index++) {
-    const element = valid_coupon_codes[index];
+for (let index = 0; index < valid_example_coupon_codes.length; index++) {
+    const element = valid_example_coupon_codes[index];
     if (checkCoupon(element) != true)
     {
         throw new Error('Coupon "' + element + '" did not match encrypted value. Something is broken...');
     }
 }
 
-for (let index = 0; index < random_codes.length; index++) {
-    const element = random_codes[index];
+for (let index = 0; index < random_invalid_codes.length; index++) {
+    const element = random_invalid_codes[index];
     if (checkCoupon(element) == true)
     {
         throw new Error('Random Coupon "' + element + '" did match encrypted value. Something is broken...');
