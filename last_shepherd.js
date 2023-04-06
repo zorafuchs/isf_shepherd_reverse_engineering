@@ -270,12 +270,12 @@ function hex_from_chars(input_string) {
 }
 
 // Encrypted Coupon codes
-var valid_incrypted_coupon_codes = ['048ccd1fb6067ee0e304dc2025b96f4b', '296b66f3e332ab4c27501ca175c3b34d', '048ccd1fb6067ee0d4ca5da7e899def6', 'bad5ede188bd1df1db8b06031867621a', '048ccd1fb6067ee0d6bd98bdb9a1a9b8a3f09b75107ca0da', 'f316e31f45811c72c4e04380eac44e13', '47e046fb250a0b95cade3eff4ebda29c93157b2fc01c2430', '296b66f3e332ab4c27501ca175c3b34d'];
+var valid_encrypted_coupon_codes = ['048ccd1fb6067ee0e304dc2025b96f4b', '296b66f3e332ab4c27501ca175c3b34d', '048ccd1fb6067ee0d4ca5da7e899def6', 'bad5ede188bd1df1db8b06031867621a', '048ccd1fb6067ee0d6bd98bdb9a1a9b8a3f09b75107ca0da', 'f316e31f45811c72c4e04380eac44e13', '47e046fb250a0b95cade3eff4ebda29c93157b2fc01c2430', '296b66f3e332ab4c27501ca175c3b34d'];
 
 function checkCoupon(user_inputed_coupon) {
 
     var encrypted_user_input = hex_from_chars(des(chars_from_hex('0ba950d08830c8079bded71b852934453db8f4ffff1f5842'), user_inputed_coupon, 1, chars_from_hex('821fd38b9a7c0247') ? 1 : 0, chars_from_hex('821fd38b9a7c0247')));
-    var is_match = valid_incrypted_coupon_codes['indexOf'](encrypted_user_input);
+    var is_match = valid_encrypted_coupon_codes['indexOf'](encrypted_user_input);
     if (is_match < 0) {
         return false
     } else {
@@ -411,7 +411,7 @@ if (des("©PÐ0ÈÞ×)4E=¸ôÿÿXB", ")kfóã2«L'P¡uÃ³M", 0, 1, 
 }
 
 // Prints codes to console
-for (let index = 0; index < valid_incrypted_coupon_codes.length; index++) {
-    const element = valid_incrypted_coupon_codes[index];
-    console.log(des("©PÐ0ÈÞ×)4E=¸ôÿÿXB", chars_from_hex(element), 0, 1, "Ó|G"));
+for (let index = 0; index < valid_encrypted_coupon_codes.length; index++) {
+    const element = valid_encrypted_coupon_codes[index];
+    console.log(des( chars_from_hex("0ba950d08830c8079bded71b852934453db8f4ffff1f5842"), chars_from_hex(element), 0, 1, chars_from_hex("821fd38b9a7c0247")));
 }
